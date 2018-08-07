@@ -80,3 +80,9 @@ func maybeObfuscate(shape, planes) {
   * street-signs
 * Detecting north (likely by anaylzing the detected map features)
 
+#### In the beginning (AKA prototype) we could assume the following hard things are given:
+* geocoding
+* route
+* north
+
+Then, we would just draw hovering arrows pointing in the correct direction.
