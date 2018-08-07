@@ -62,6 +62,10 @@ func guessNorth(detections, map) {
 func findRoute(positionA, positionB) {
     // use OSM for pedestrian routing
 }
+
+func maybeObfuscate(shape, planes) {
+    // returns the given shape potentially obfuscated by the given planes
+}
 ```
 
 ### Given the above, the major problems are:
@@ -69,6 +73,7 @@ func findRoute(positionA, positionB) {
 * Geocoding a query
 * Routing b/w two points
 * Obfuscation (of a line)
+  * good (distant) plane detection
 * Detecting map features
   * sidewalks
   * streets
