@@ -28,7 +28,7 @@ func route(query) {
 func render(currentLocation, route) {
     let indicators = getDirectionIndicators(currentLocation, route)
     if indicators.hasLine {
-        let maskedHeadingLine = maybeObfuscate(indicators.line, getDetectedPlanes())
+        let maskedHeadingLine = maybeOcclude(indicators.line, getDetectedPlanes())
         iOS.draw(maskedHeadingLine)
     } else if indicators.hasArrow {
         iOS.draw(nearbyDirection.arrow) 
@@ -63,8 +63,8 @@ func findRoute(positionA, positionB) {
     // use OSM for pedestrian routing
 }
 
-func maybeObfuscate(shape, planes) {
-    // returns the given shape potentially obfuscated by the given planes
+func maybeOcclude(shape, planes) {
+    // returns the given shape potentially occluded by the given planes
 }
 ```
 
