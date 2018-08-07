@@ -63,6 +63,7 @@ func guessNorth(detections, map) {
 ### Given the above, the major problems are:
 
 * Geocoding a query
+* Routing b/w two points
 * Obfuscation (of a line)
 * Detecting map features
   * sidewalks
