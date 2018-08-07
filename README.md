@@ -58,6 +58,10 @@ func getDirectionIndicators(currentLocation, route) {
 func guessNorth(detections, map) {
     // detect from sidewalks or roads or street signs etc...
 }
+
+func findRoute(positionA, positionB) {
+    // use OSM for pedestrian routing
+}
 ```
 
 ### Given the above, the major problems are:
